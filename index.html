@@ -1,14 +1,16 @@
 <html>
 <head>
-  <title>QRcode</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="jquery.qrcode.min.js"></script>
+	<title>QRcode</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.qrcode.min.js"></script>
+	<script type="text/javascript">
+		var text = prompt('QRコードにしたい情報の入力');
+	</script>
 </head>
 <body>
   <div id="qrimg"></div>
   <script>
-    $('#qrimg').qrcode({width: 64,height: 64,text: "topi.cf"});
+    $('#qrimg').qrcode({width: 64,height: 64,text: text});
   </script>
 </body>
 </html>
